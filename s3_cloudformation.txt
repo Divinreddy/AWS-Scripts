@@ -1,0 +1,105 @@
+{
+"Description" : "This template will create an s3bucket",
+
+"Resources" : {
+"S3Bucket" : {
+"Type" : "AWS::S3::Bucket",
+"Properties" : {
+"AccessControl" : "PublicRead",
+"BucketName" : "gigitygumdrops1-pedram"
+}
+}
+},
+
+"Outputs" : {
+"BucketName" : {
+"Value" : { "Ref" : "S3Bucket" },
+"Description" : "Created bucket for storing websites"
+}
+}
+}
+========================================
+
+{
+      "AWSTemplateFormatVersion" : "2010-09-09",
+      "Resources" : {
+          "S3Bucket" : {
+             "Type" : "AWS::S3::Bucket",
+             "Properties" : {
+             }
+         }
+      },
+      "Outputs" : {
+          "S3BucketName" : {
+                "Value" : {"Ref": "S3Bucket"},
+                "Description" : "Name of S3 bucket"
+          }
+      }
+}
+========================================
+{
+      "AWSTemplateFormatVersion" : "2010-09-09",
+      "Parameters" : {
+        "BucketName": {
+          "Description": "Name of MyS3Bucket",
+          "Type": "String",
+          "Default": "mys3bucketacloudgurutraining"
+        }
+      },
+      "Resources" : {
+          "S3Bucket" : {
+             "Type" : "AWS::S3::Bucket",
+             "Properties" : {
+              "BucketName": { "Ref": "BucketName" }
+             }
+         }
+      },
+      "Outputs" : {
+          "S3BucketName" : {
+                "Value" : {"Ref": "S3Bucket"},
+                "Description" : "Name of S3 bucket"
+          }
+      }
+}
+=======================================================
+{
+      "AWSTemplateFormatVersion" : "2010-09-09",
+      "Resources" : {
+          "S3Bucket" : {
+             "Type" : "AWS::S3::Bucket",
+             "Properties" : {
+             }
+         }
+      },
+      "Outputs" : {
+          "S3BucketName" : {
+                "Value" : {"Ref": "S3Bucket"},
+                "Description" : "Name of S3 bucket"
+          }
+      }
+}
+-==============================================================
+{
+      "AWSTemplateFormatVersion" : "2010-09-09",
+      "Parameters" : {
+        "BucketName": {
+          "Description": "Name of MyS3Bucket",
+          "Type": "String",
+          "Default": "mys3bucketacloudgurutraining"
+        }
+      },
+      "Resources" : {
+          "S3Bucket" : {
+             "Type" : "AWS::S3::Bucket",
+             "Properties" : {
+              "BucketName": { "Ref": "BucketName" }
+             }
+         }
+      },
+      "Outputs" : {
+          "S3BucketName" : {
+                "Value" : {"Ref": "S3Bucket"},
+                "Description" : "Name of S3 bucket"
+          }
+      }
+}

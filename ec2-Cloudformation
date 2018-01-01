@@ -1,5 +1,7 @@
 Use the following url
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html
+template anotomy: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
+
 
 {
   "AWSTemplateFormatVersion" : "2010-09-09",

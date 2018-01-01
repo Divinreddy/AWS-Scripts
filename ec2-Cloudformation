@@ -2,6 +2,10 @@ Use the following url
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html
 template anotomy: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
 
+webserver template: https://console.aws.amazon.com/cloudformation/designer/home?templateUrl=https://s3.amazonaws.com/cloudformation-examples/sample-ec2-vpc.template&region=us-east-1
+
+
+
 
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
